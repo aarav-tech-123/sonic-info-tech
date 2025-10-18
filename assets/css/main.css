@@ -1,28 +1,40 @@
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #111111; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ec8d23; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #111111;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ec8d23;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #212529;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ec8d23; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ec8d23; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #212529;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #ec8d23;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ec8d23;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -2620,4 +2632,392 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+
+
+
+
+/* Comparison Section */
+
+.comparison {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #e26e2b, #dd9a4e, #f0996d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textShine 3s linear infinite;
+}
+
+@keyframes textShine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.accordion.custom-accordion {
+  overflow: hidden;
+}
+
+.accordion.custom-accordion .accordion-item {
+  background: var(--gradient-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px;
+  border-radius: none !important;
+  overflow: hidden;
+}
+
+.accordion.custom-accordion .accordion-button {
+  background: #fff;
+  color: #1a1a1a;
+  font-weight: 400;
+  font-size: 1rem;
+  border: 1px solid #1a1a1a;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: none !important;
+}
+
+.accordion.custom-accordion .accordion-button:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.accordion.custom-accordion .accordion-button:not(.collapsed) {
+  background: #fff;
+  color: #1a1a1a;
+  box-shadow: none;
+}
+
+.accordion.custom-accordion .accordion-button::after {
+  content: '+';
+  font-size: 24px;
+  transition: transform 0.3s;
+  background-image: none !important;
+  width: auto;
+  height: auto;
+  transform: none;
+}
+
+.accordion.custom-accordion .accordion-button:not(.collapsed)::after {
+  content: '-';
+  transform: none;
+}
+
+.accordion.custom-accordion .accordion-body {
+  padding: 0;
+  background: rgba(11, 1, 28, 0.5);
+}
+
+.faq-accordion-body {
+  padding: 1rem .5rem !important;
+}
+
+/* Table Styling */
+.comparison-table {
+  width: 100%;
+  margin-bottom: 0;
+  background: transparent;
+  color: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-table th {
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #1a1a1a;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.comparison-table th:first-child {
+  text-align: left;
+  background: #fff;
+  width: 25%;
+}
+
+.comparison-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  font-size: 14px;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+  background: #fff;
+}
+
+.comparison-table .text-start {
+  text-align: left !important;
+}
+
+.comparison-table .align-middle {
+  vertical-align: middle !important;
+}
+
+.comparison-table .text-center {
+  text-align: center !important;
+}
+
+
+.comparison-table .table-light {
+  background: #fff !important;
+  color: var(--bs-light) !important;
+}
+
+.comparison-table .bg-white {
+  background: #fff !important;
+  color: var(--bs-light) !important;
+}
+
+/* Check and Cross Styling */
+.checked {
+  color: #00ff88 !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cross {
+  color: #ff4444 !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Small text in headers */
+.comparison-table th small {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .accordion.custom-accordion .accordion-button {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .comparison-table th small {
+    font-size: 10px;
+  }
+
+  .check,
+  .cross {
+    font-size: 14px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .comparison-table {
+    font-size: 11px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .custom-accordion .accordion-button {
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+  }
+}
+
+
+
+
+/* Pricing Section */
+.pricing {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.pricing-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  border: 1px solid #1a1a1a;
+  backdrop-filter: blur(10px);
+  animation: pulse 2s infinite;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.pricing-card {
+  background: var(--gradient-pricing);
+  border-radius: 20px;
+  padding: 40px 25px;
+  border: 1px solid #1a1a1a;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: -1;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: transparent;
+}
+
+.pricing-card:hover::before {
+  opacity: 0.05;
+}
+
+.pricing-card.featured {
+  border: 2px solid #e26e2b;
+  transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.pricing-header-card {
+  margin-bottom: 25px;
+  flex-shrink: 0;
+}
+
+.pricing-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.pricing-subtitle {
+  color: #1a1a1a;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 800;
+  /* margin-bottom: 5px; */
+  /* background: var(--gradient-text); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+}
+
+.price small {
+  font-size: 14px;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.pricing-features {
+  list-style: none;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.pricing-features li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.pricing-features li i {
+  color: #1a1a1a !important;
+  flex-shrink: 0;
+}
+
+.pricing-button {
+  margin-top: auto;
+  flex-shrink: 0;
+  background-color: #e26e2b !important;
+  border-radius: 10px;
+}
+
+.pricing-button button {
+  color: #fff !important;
+}
+
+
+.pricing-button:hover {
+  background-color: #1a1a1a !important;
 }

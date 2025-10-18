@@ -32,12 +32,6 @@
             --headingSize: 40px;
         }
 
-        .swift-up-text {
-            margin: 0;
-            letter-spacing: -1px;
-            font-size: var(--headingSize);
-        }
-
         span {
             display: inline-block;
             overflow: hidden;
@@ -67,8 +61,6 @@
                 --headingSize: 35px;
             }
         }
-
-        /* --- MODERN SEO SERVICE & PRICING STYLES --- */
 
         /* Pricing Cards - Modern Lift & Highlight */
         .pricing-item {
@@ -145,185 +137,6 @@
         .service-box:hover {
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
         }
-
-                /* Comparison Section */
-        
-        .comparison {
-            padding: 60px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .section-title h2 {
-            font-size: 42px;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-        
-        .gradient-text {
-            background: linear-gradient(90deg, #8A2BE2, #9D4EDD, #B66DF0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 200% auto;
-            animation: textShine 3s linear infinite;
-        }
-        
-        @keyframes textShine {
-            to { background-position: 200% center; }
-        }
-        
-        .accordion.custom-accordion {
-            overflow: hidden;
-        }
-        
-        .accordion.custom-accordion .accordion-item {
-            background: var(--gradient-card);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 15px;
-            border-radius: none !important;
-            overflow: hidden;
-        }
-        
-        .accordion.custom-accordion .accordion-button {
-            background: #fff;
-            color: #1a1a1a;
-            font-weight: 400;
-            font-size: 1rem;
-            border: 1px solid #1a1a1a;
-            width: 100%;
-            text-align: left;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: none !important;
-        }
-        
-        .accordion.custom-accordion .accordion-button:hover {
-            background: #1a1a1a;
-            color: #fff;
-        }
-        
-        .accordion.custom-accordion .accordion-button:not(.collapsed) {
-            background: #fff;
-            color: #1a1a1a;
-            box-shadow: none;
-        }
-        
-        .accordion.custom-accordion .accordion-button::after {
-            content: '+';
-            font-size: 24px;
-            transition: transform 0.3s;
-            background-image: none !important;
-            width: auto;
-            height: auto;
-            transform: none;
-        }
-        
-        .accordion.custom-accordion .accordion-button:not(.collapsed)::after {
-            content: '-';
-            transform: none;
-        }
-        
-        .accordion.custom-accordion .accordion-body {
-            padding: 0;
-            background: rgba(11, 1, 28, 0.5);
-        }
-
-        .faq-accordion-body{
-            padding:1rem .5rem !important;
-        }
-        
-        /* Table Styling */
-        .comparison-table {
-            width: 100%;
-            margin-bottom: 0;
-            background: transparent;
-            color: #1a1a1a;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .comparison-table th {
-            background: #fff;
-            padding: 15px;
-            text-align: center;
-            font-weight: 600;
-            border: 1px solid #1a1a1a;
-            font-size: 14px;
-            vertical-align: middle;
-        }
-        
-        .comparison-table th:first-child {
-            text-align: left;
-            background: #fff;
-            width: 25%;
-        }
-        
-        .comparison-table td {
-            padding: 12px 15px;
-            text-align: center;
-            border: 1px solid #1a1a1a;
-            color: #1a1a1a;
-            font-size: 14px;
-            vertical-align: middle;
-            background-color: #fff;
-        }
-        
-        .comparison-table td:first-child {
-            text-align: left;
-            font-weight: 500;
-            background: #fff;
-        }
-        
-        .comparison-table .text-start {
-            text-align: left !important;
-        }
-        
-        .comparison-table .align-middle {
-            vertical-align: middle !important;
-        }
-        
-        .comparison-table .text-center {
-            text-align: center !important;
-        }
-        
-        
-        .comparison-table .table-light {
-            background: #fff !important;
-            color: var(--bs-light) !important;
-        }
-        
-        .comparison-table .bg-white {
-            background: #fff !important;
-            color: var(--bs-light) !important;
-        }
-        
-        /* Check and Cross Styling */
-        .checked {
-            color: #00ff88 !important;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        
-        .cross {
-            color: #ff4444 !important;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        
-        /* Small text in headers */
-        .comparison-table th small {
-            display: block;
-            font-size: 12px;
-            font-weight: 400;
-            opacity: 0.9;
-            margin-top: 5px;
-        }
-
     </style>
 </head>
 
@@ -485,71 +298,98 @@
                 </div>
             </div>
         </section>
-        <section id="packages" class="pricing section">
+       
 
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Flexible SEO Packages</h2>
-                <p>Choose the plan that best fits your business size and growth ambitions.</p>
-            </div>
+        <section class="pricing">
             <div class="container">
+                <div class="section-title">
+                    <div class="pricing-badge">
+                        <i class="bi bi-tags"></i> AFFORDABLE SEO PACKAGES
+                    </div>
+                    <h2>Our <span class="gradient-text">SEO Packages</span></h2>
+                    <p class="section-title">Find the perfect SEO package for your business needs and budget</p>
+                </div>
 
-                <div class="row g-4 g-lg-4 justify-content-center">
-
-                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="pricing-item">
-                            <h3>Starter Boost</h3>
-                            <h4><sup>$</sup>499<span> / month</span></h4>
-                            <p class="text-secondary">Ideal for new businesses or local service providers.</p>
-                            <ul>
-                                <li><i class="bi bi-check2-all"></i> <span>Initial Technical Audit</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>5 Core Target Keywords</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Monthly On-Page Optimization</span></li>
-                                <li class="na"><i class="bi bi-x"></i> <span>Authority Link Building (N/A)</span></li>
-                                <li class="na"><i class="bi bi-x"></i> <span>Dedicated Content Creation (N/A)</span>
-                                </li>
-                            </ul>
-                            <div class="text-center"><a href="contact.html" class="buy-btn">Start Now</a></div>
+                <div class="pricing-grid">
+                    <!-- SEO Essential -->
+                    <div class="pricing-card">
+                        <div class="pricing-header-card">
+                            <h3 class="pricing-title">SEO Essential</h3>
+                            <p class="pricing-subtitle">For Small Websites</p>
+                            <div class="price">CA$299<small>/month</small></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Upto 20 keywords</li>
+                            <li><i class="fas fa-check"></i> Billed every 3 months</li>
+                            <li><i class="fas fa-check"></i> 10 Optimized Web pages</li>
+                            <li><i class="fas fa-check"></i> Initial Review & Analysis</li>
+                            <li><i class="fas fa-check"></i> Basic Reporting</li>
+                        </ul>
+                        <div class="pricing-button">
+                            <button class="btn">Get Started</button>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 featured" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="pricing-item">
-                            <h3>Growth Accelerator</h3>
-                            <h4><sup>$</sup>999<span> / month</span></h4>
-                            <p class="text-secondary">Perfect for scaling businesses targeting regional or national
-                                growth.</p>
-                            <ul>
-                                <li><i class="bi bi-check2-all"></i> <span>Comprehensive SEO Audit</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>15 Target Keywords + Local SEO</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Monthly On-Page & Technical Fixes</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>2 High-Quality Backlinks / Month</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>1 Blog Post (1000 words) / Month</span></li>
-                            </ul>
-                            <div class="text-center"><a href="contact.html" class="buy-btn">Choose Plan</a></div>
+                    <!-- SEO Advanced -->
+                    <div class="pricing-card featured">
+                        <div class="pricing-header-card">
+                            <h3 class="pricing-title" style="color: #1a1a1a;">SEO Advanced</h3>
+                            <p class="pricing-subtitle">Small to Medium Websites</p>
+                            <div class="price">CA$399<small>/month</small></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Upto 20 keywords</li>
+                            <li><i class="fas fa-check"></i> Website & Competitor Analysis</li>
+                            <li><i class="fas fa-check"></i> 20 Optimized Web pages</li>
+                            <li><i class="fas fa-check"></i> Initial Review & Analysis</li>
+                            <li><i class="fas fa-check"></i> Advanced Reporting</li>
+                        </ul>
+                        <div class="pricing-button">
+                            <button class="btn">Get Started</button>
                         </div>
                     </div>
 
-                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="pricing-item">
-                            <h3>Enterprise Solution</h3>
-                            <h4><sup>$</sup>1,999<span> / month</span></h4>
-                            <p class="text-secondary">For large companies or e-commerce platforms requiring max
-                                visibility.</p>
-                            <ul>
-                                <li><i class="bi bi-check2-all"></i> <span>Full Site Audit & Strategy</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Unlimited Keyword Targeting</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Dedicated Technical Support (24/7)</span>
-                                </li>
-                                <li><i class="bi bi-check2-all"></i> <span>5+ High-Quality Backlinks / Month</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Advanced Content Strategy & Creation</span>
-                                </li>
-                            </ul>
-                            <div class="text-center"><a href="contact.html" class="buy-btn">Get Custom Quote</a></div>
+                    <!-- SEO Professional -->
+                    <div class="pricing-card">
+                        <div class="pricing-header-card">
+                            <h3 class="pricing-title">SEO Professional</h3>
+                            <p class="pricing-subtitle">Medium to Large</p>
+                            <div class="price">CA$499<small>/month</small></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Upto 50 keywords</li>
+                            <li><i class="fas fa-check"></i> Monthly billing</li>
+                            <li><i class="fas fa-check"></i> 35 Optimized Web pages</li>
+                            <li><i class="fas fa-check"></i> Initial Review & Analysis</li>
+                            <li><i class="fas fa-check"></i> Comprehensive Reporting</li>
+                        </ul>
+                        <div class="pricing-button">
+                            <button class="btn">Get Started</button>
+                        </div>
+                    </div>
+
+                    <!-- SEO Enterprise -->
+                    <div class="pricing-card">
+                        <div class="pricing-header-card">
+                            <h3 class="pricing-title">SEO Enterprise</h3>
+                            <p class="pricing-subtitle">For Medium to Large</p>
+                            <div class="price">CA$599<small>/month</small></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Upto 100 keywords</li>
+                            <li><i class="fas fa-check"></i> Monthly billing</li>
+                            <li><i class="fas fa-check"></i> Complete Website Optimization</li>
+                            <li><i class="fas fa-check"></i> Initial Review & Analysis</li>
+                            <li><i class="fas fa-check"></i> Premium Reporting</li>
+                        </ul>
+                        <div class="pricing-button">
+                            <button class="btn">Get Started</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!-- Comparison Section -->
         <section class="comparison">
@@ -577,61 +417,87 @@
                                         <thead>
                                             <tr>
                                                 <th>ACTIVITY / SERVICE</th>
-                                                <th>SEO ESSENTIAL<br><small>$299</small></th>
-                                                <th>SEO ADVANCED<br><small>$399</small></th>
-                                                <th>SEO PROFESSIONAL<br><small>$499</small></th>
-                                                <th>SEO ENTERPRISE<br><small>$599</small></th>
+                                                <th>SEO ESSENTIAL<br><small>CA$299</small></th>
+                                                <th>SEO ADVANCED<br><small>CA$399</small></th>
+                                                <th>SEO PROFESSIONAL<br><small>CA$499</small></th>
+                                                <th>SEO ENTERPRISE<br><small>CA$599</small></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>Pre-Optimization Analysis</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Competitor Analysis</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Keyword Research & Analysis</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Baseline Ranking Check</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Duplicate Content Check</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Google Penalty Check</td>
                                                 <td class="cross">✘</td>
                                                 <td class="cross">✘</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Backlinks Analysis (If required)</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -656,166 +522,245 @@
                                         <thead>
                                             <tr>
                                                 <th>ACTIVITY / SERVICE</th>
-                                                <th>SEO ESSENTIAL<br><small>$299</small></th>
-                                                <th>SEO ADVANCED<br><small>$399</small></th>
-                                                <th>SEO PROFESSIONAL<br><small>$499</small></th>
-                                                <th>SEO ENTERPRISE<br><small>$599</small></th>
+                                                <th>SEO ESSENTIAL<br><small>CA$299</small></th>
+                                                <th>SEO ADVANCED<br><small>CA$399</small></th>
+                                                <th>SEO PROFESSIONAL<br><small>CA$499</small></th>
+                                                <th>SEO ENTERPRISE<br><small>CA$599</small></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>Onsite Recommendations & Implementation</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Website Canonical Check</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Title Tag Optimization</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>META Tags Optimization</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Heading Tags Optimization</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Image Alt Tags Optimization</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Content Optimization</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>SEO Friendly URL Setup</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Site Navigation Analysis</td>
                                                 <td class="cross">✘</td>
                                                 <td class="cross">✘</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>404 Page Implementation</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Mobile Friendliness Check & Optimization</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Broken Links Check</td>
                                                 <td class="cross">✘</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>301 Redirect Check & Fix</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Website Speed Check</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Google Indexed Pages Check</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Robots.txt Creation</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Google XML Sitemap</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>HTML Sitemap Setup</td>
                                                 <td class="cross">✘</td>
                                                 <td class="cross">✘</td>
                                                 <td class="cross">✘</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Google Webmaster Tools Setup</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Google Analytics Setup</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Structured Data Setup</td>
                                                 <td class="cross">✘</td>
                                                 <td class="cross">✘</td>
                                                 <td class="cross">✘</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>On-Site Blog Section Creation</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>On-Site Blog Posting</td>
@@ -826,10 +771,14 @@
                                             </tr>
                                             <tr>
                                                 <td>Linking to Social Profiles</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -854,19 +803,23 @@
                                         <thead>
                                             <tr>
                                                 <th>ACTIVITY / SERVICE</th>
-                                                <th>SEO ESSENTIAL<br><small>$299</small></th>
-                                                <th>SEO ADVANCED<br><small>$399</small></th>
-                                                <th>SEO PROFESSIONAL<br><small>$499</small></th>
-                                                <th>SEO ENTERPRISE<br><small>$599</small></th>
+                                                <th>SEO ESSENTIAL<br><small>CA$299</small></th>
+                                                <th>SEO ADVANCED<br><small>CA$399</small></th>
+                                                <th>SEO PROFESSIONAL<br><small>CA$499</small></th>
+                                                <th>SEO ENTERPRISE<br><small>CA$599</small></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>Search Engine Submission (Manual)</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Article Writing</td>
@@ -884,24 +837,34 @@
                                             </tr>
                                             <tr>
                                                 <td>Article Marketing</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Classified Submissions</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Business Listing</td>
                                                 <td>5</td>
                                                 <td>10</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Blog Creation (One-Time)</td>
@@ -926,31 +889,45 @@
                                             </tr>
                                             <tr>
                                                 <td>Blog Marketing</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Third Party Blog Pinging</td>
                                                 <td class="cross">✘</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>PDF Posting</td>
                                                 <td class="cross">✘</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Image Sharing</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Reddit Posting</td>
@@ -975,10 +952,14 @@
                                             </tr>
                                             <tr>
                                                 <td>Social Bookmarking</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Profile Creation</td>
@@ -1049,10 +1030,10 @@
                                         <thead>
                                             <tr>
                                                 <th>PLATFORM</th>
-                                                <th>SEO ESSENTIAL<br><small>$299</small></th>
-                                                <th>SEO ADVANCED<br><small>$399</small></th>
-                                                <th>SEO PROFESSIONAL<br><small>$499</small></th>
-                                                <th>SEO ENTERPRISE<br><small>$599</small></th>
+                                                <th>SEO ESSENTIAL<br><small>CA$299</small></th>
+                                                <th>SEO ADVANCED<br><small>CA$399</small></th>
+                                                <th>SEO PROFESSIONAL<br><small>CA$499</small></th>
+                                                <th>SEO ENTERPRISE<br><small>CA$599</small></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1106,10 +1087,10 @@
                                         <thead>
                                             <tr>
                                                 <th>REPORT TYPE</th>
-                                                <th>SEO ESSENTIAL<br><small>$299</small></th>
-                                                <th>SEO ADVANCED<br><small>$399</small></th>
-                                                <th>SEO PROFESSIONAL<br><small>$499</small></th>
-                                                <th>SEO ENTERPRISE<br><small>$599</small></th>
+                                                <th>SEO ESSENTIAL<br><small>CA$299</small></th>
+                                                <th>SEO ADVANCED<br><small>CA$399</small></th>
+                                                <th>SEO PROFESSIONAL<br><small>CA$499</small></th>
+                                                <th>SEO ENTERPRISE<br><small>CA$599</small></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1117,36 +1098,52 @@
                                                 <td>Weekly Report</td>
                                                 <td class="cross">✘</td>
                                                 <td class="cross">✘</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Monthly Website Analytics Report</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Monthly Keywords Ranking Report</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Monthly Off Page Submission Report</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Bi-Monthly Website Progress Report</td>
                                                 <td class="cross">✘</td>
                                                 <td class="cross">✘</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1170,40 +1167,56 @@
                                         <thead>
                                             <tr>
                                                 <th>SUPPORT TYPE</th>
-                                                <th>SEO ESSENTIAL<br><small>$299</small></th>
-                                                <th>SEO ADVANCED<br><small>$399</small></th>
-                                                <th>SEO PROFESSIONAL<br><small>$499</small></th>
-                                                <th>SEO ENTERPRISE<br><small>$599</small></th>
+                                                <th>SEO ESSENTIAL<br><small>CA$299</small></th>
+                                                <th>SEO ADVANCED<br><small>CA$399</small></th>
+                                                <th>SEO PROFESSIONAL<br><small>CA$499</small></th>
+                                                <th>SEO ENTERPRISE<br><small>CA$599</small></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>Email</td>
-                                                <td class="checked">✔</td>
-                                                <td class="checked">✔</td>
-                                                <td class="checked">✔</td>
-                                                <td class="checked">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Phone</td>
-                                                <td class="checked">✔</td>
-                                                <td class="checked">✔</td>
-                                                <td class="checked">✔</td>
-                                                <td class="checked">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Chat</td>
-                                                <td class="checked">✔</td>
-                                                <td class="checked">✔</td>
-                                                <td class="checked">✔</td>
-                                                <td class="checked">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Monthly Google/Zoom Meeting</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
-                                                <td class="check">✔</td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
+                                                <td class="checked"><i class="bi bi-check" style="font-size: 2rem;"></i>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
