@@ -3021,3 +3021,12 @@ section,
 .pricing-button:hover {
   background-color: #1a1a1a !important;
 }
+
+table thead tr .feature {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+table thead tr th small {
+  font-size: 1rem !important;
+}
