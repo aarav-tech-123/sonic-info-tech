@@ -3055,6 +3055,9 @@ table thead tr th small {
   .pricing-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  .smo {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   .pricing-card.featured {
     transform: scale(1);
