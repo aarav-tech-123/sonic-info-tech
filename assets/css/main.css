@@ -2909,6 +2909,13 @@ section,
   margin-top: 50px;
 }
 
+.cms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
 .pricing-card {
   background: var(--gradient-pricing);
   border-radius: 20px;
@@ -3058,6 +3065,9 @@ table thead tr th small {
   .smo {
     grid-template-columns: repeat(1, 1fr);
   }
+  .cms {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   .pricing-card.featured {
     transform: scale(1);
@@ -3067,3 +3077,5 @@ table thead tr th small {
     transform: translateY(-10px);
   }
 }
+
+

@@ -18,6 +18,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -205,7 +206,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
                     <li><a href="career.html">Career</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -290,83 +291,67 @@
                 </div>
             </div>
         </section>
-        <section id="packages" class="pricing section">
 
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Logo Design Packages</h2>
-                <p>Choose the level of service and depth of branding that matches your business stage.</p>
-            </div>
-            <div class="container">
 
-                <div class="row g-4 g-lg-4 justify-content-center">
-
-                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="pricing-item">
-                            <h3>Starter Logo</h3>
-                            <h4><sup>$</sup>300<span> (One-time)</span></h4>
-                            <p class="text-secondary">Basic package for solo entrepreneurs or new ventures.</p>
-                            <ul>
-                                <li><i class="bi bi-check2-all"></i> <span>2 Initial Unique Concepts</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>2 Rounds of Revisions</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Final Logo in Vector (AI, EPS) & PNG</span>
-                                </li>
-                                <li class="na"><i class="bi bi-x"></i> <span>Dedicated Brand Guidelines (N/A)</span>
-                                </li>
-                                <li class="na"><i class="bi bi-x"></i> <span>Social Media Kit Integration (N/A)</span>
-                                </li>
-                            </ul>
-                            <div class="text-center"><a href="contact.html" class="buy-btn">Order Basic</a></div>
-                        </div>
+        <section class="pricing">
+            <div class="container" style="max-width: 800px;">
+                <div class="section-title p-0">
+                    <div class="pricing-badge">
+                        <i class="fas fa-tags"></i> LOGO DESIGN PACKAGES
                     </div>
-
-                    <div class="col-lg-4 featured" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="pricing-item">
-                            <h3>Professional Branding</h3>
-                            <h4><sup>$</sup>650<span> (One-time)</span></h4>
-                            <p class="text-secondary">Our most popular package for growing businesses needing a full
-                                identity.</p>
-                            <ul>
-                                <li><i class="bi bi-check2-all"></i> <span>3 Initial Unique Concepts & Moodboards</span>
-                                </li>
-                                <li><i class="bi bi-check2-all"></i> <span>Unlimited Revisions</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Full Final File Suite (Color, B&W,
-                                        Vertical/Horizontal)</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Mini Brand Style Guide (Color Palette,
-                                        Typography)</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Social Media Profile Kit (Avatars,
-                                        Banners)</span></li>
-                            </ul>
-                            <div class="text-center"><a href="contact.html" class="buy-btn">Select Pro</a></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="pricing-item">
-                            <h3>Complete Brand Identity</h3>
-                            <h4><sup>$</sup>1,500+<span> (One-time)</span></h4>
-                            <p class="text-secondary">For established brands needing comprehensive design and
-                                application.</p>
-                            <ul>
-                                <li><i class="bi bi-check2-all"></i> <span>Full Brand Strategy & Market
-                                        Positioning</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Custom Logo, Iconography, and Pattern
-                                        Design</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Full Brand Guideline Document (50+
-                                        pages)</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Business Card & Letterhead Design</span></li>
-                                <li><i class="bi bi-check2-all"></i> <span>Brand Mockups (Merchandise, Signage)</span>
-                                </li>
-                            </ul>
-                            <div class="text-center"><a href="contact.html" class="buy-btn">Request Full Identity</a>
-                            </div>
-                        </div>
-                    </div>
-
+                    <h2>Our <span class="gradient-text">Logo Design Packages</span></h2>
+                    <p class="section-title">Choose a package that fits your creative and branding needs.</p>
                 </div>
 
-            </div>
+                <div class="smo">
+                    <!-- Basic Package -->
+                    <div class="pricing-card">
+                        <div class="pricing-header-card">
+                            <h3 class="pricing-title">Basic</h3>
+                            <p class="pricing-subtitle">Logo Design Package</p>
+                            <div class="price">$120</div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Logo Design Idea – 1</li>
+                            <li><i class="fas fa-check"></i> Logo Revisions – 1</li>
+                            <li><i class="fas fa-check"></i> Logo Design Duration – 1 Working Day</li>
+                            <li><i class="fas fa-check"></i> Logo Design Format – JPG/PNG</li>
+                            <li><i class="fas fa-xmark"></i> Logo Source File (AI)</li>
+                            <li><i class="fas fa-xmark"></i> Custom Graphic</li>
+                            <li><i class="fas fa-check"></i> Text Logo</li>
+                            <li><i class="fas fa-xmark"></i> Competitors Logo Analysis</li>
+                        </ul>
+                        <div class="pricing-button">
+                            <button class="btn">Get Started Now!</button>
+                        </div>
+                    </div>
 
+                    <!-- Professional Package -->
+                    <div class="pricing-card featured">
+                        <div class="pricing-header-card">
+                            <h3 class="pricing-title" style="color: #1a1a1a;">Professional</h3>
+                            <p class="pricing-subtitle">Logo Design Package</p>
+                            <div class="price">$210</div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Logo Design Idea – 2</li>
+                            <li><i class="fas fa-check"></i> Logo Revisions – 2</li>
+                            <li><i class="fas fa-check"></i> Logo Design Duration – 2–4 Working Days</li>
+                            <li><i class="fas fa-check"></i> Logo Design Format – JPG/PNG</li>
+                            <li><i class="fas fa-check"></i> Logo Source File (AI)</li>
+                            <li><i class="fas fa-check"></i> Custom Graphic</li>
+                            <li><i class="fas fa-check"></i> Text Logo</li>
+                            <li><i class="fas fa-check"></i> Competitors Logo Analysis</li>
+                        </ul>
+                        <div class="pricing-button">
+                            <button class="btn">Get Started Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+
         <section class="container py-5 text-center" style="background-color: var(--color-background);">
             <h2 class="swift-up-text">Ready to make your first impression unforgettable?</h2>
             <p class="mt-3" style="color: #ccc;">A great logo is the foundation of a successful brand. Let's start
