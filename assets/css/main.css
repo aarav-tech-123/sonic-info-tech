@@ -533,7 +533,7 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   position: relative;
 }
 
@@ -3062,9 +3062,11 @@ table thead tr th small {
   .pricing-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .smo {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .cms {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -3079,3 +3081,8 @@ table thead tr th small {
 }
 
 
+span {
+  display: inline-block;
+  overflow: hidden;
+  animation: .3s swift-up ease-in-out forwards;
+}
